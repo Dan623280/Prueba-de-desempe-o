@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "Nombre": "Lucho",
-        "Edad": 23,
-        "Curso": "Ingles",
-        "Estado": "activo"
+        "Name": "Lucho",
+        "Age": 23,
+        "Course": "Ingles",
+        "Estado": "active"
     },
     {
         "id": 2,
-        "Nombre": "Juan",
-        "Edad": 23,
-        "Curso": "Ingles",
-        "Estado": "activo"
+        "Name": "Juan",
+        "Age": 23,
+        "Course": "Ingles",
+        "Estado": "active"
     },
     {
-        "id": 3,
-        "Nombre": "lUCHO",
-        "Edad": 54,
-        "Curso": "TEOLOGIA",
-        "Estado": "activo"
+        "id": 4,
+        "Name": "DAniel",
+        "Age": 34,
+        "Course": "22",
+        "Estado": "active"
     }
 ]

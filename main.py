@@ -5,24 +5,24 @@ from menu import Menu
 from error import valor_no_valido
 
 # importar function de registro
-from registrar_estudiante import Registrar_estudiante
+from register_student import register_student
 
 # importar function de consultas
-from consultar_lista import Consultar_lista
+from Consult_list import Consult_list
 
-# importar function de busqueda del estudiante
-from buscar_estudiante import Buscar
+# importar function de busqueda del student
+from Look_for_student import Look_for
 
-# importar function de actualizar estudiante
-from actualizar_estudiante import Actualizar
+# importar function de update student
+from Update_student import update
 
-# importarfunction de eliminar estudiante
-from eliminar_estudiante import Eliminar
+# importarfunction de Delete student
+from Delete_student import Delete
 
-# importar function de guardar datos
+# importar function de guardar data
 from guardar_json import Guardar
 
-# importar function de cargar datos
+# importar function de cargar data
 from cargar_Json import Cargar
 
 #-------------------------
@@ -37,35 +37,35 @@ while True:
     # muestra el menu y devuelve la option seleccionada
     option = Menu()
 
-    # option 1 Registra nuevos estudiantes
+    # option 1 Registra nuevos students
     if option == 1:
 
-        #function para registrar
-        Registrar_estudiante()
+        #function para register
+        register_student()
     
-    # option 2 Consulta la lista de estudiantes
+    # option 2 Consulta la student list
     elif option == 2:
 
-        #function para  consultar listas
-        Consultar_lista()
+        #function para  Consult lists
+        Consult_list()
 
-    # option 3 Busca un estudiante
+    # option 3 Busca un student
     elif option == 3:
 
-        #function para buscar
-        Buscar()
+        #function para Look_for
+        Look_for()
 
-    # option 4 Actualiza la información de un estudiante
+    # option 4 Actualiza la información de un student
     elif option == 4:
 
-        #function para actualizar
-        Actualizar()
+        #function para update
+        update()
 
-    # option 5 Elimina estudiantes
+    # option 5 Elimina students
     elif option == 5:
 
-        #function para eliminar
-        Eliminar()
+        #function para Delete
+        Delete()
 
     # option 6 Sale del programa
     elif option == 6:

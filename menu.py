@@ -10,16 +10,16 @@ def Menu():
 
     #Mostrar menu
     print("")
-    print("1. Registrar nuevos estudiantes")
-    print("2. Consultar la lista de estudiantes")
-    print("3. Buscar un estudiante")
-    print("4. Actualizar la información de un estudiante.")
-    print("5. Eliminar estudiantes")
-    print("6. Salir")
+    print("1. Register new students")
+    print("2. Consult student list")
+    print("3. Look for student")
+    print("4. update la información de un student.")
+    print("5. Delete students")
+    print("6. go out")
     print("")
 
     #Pedir option
-    option = error_entero("Colocar option: ")
+    option = error_entero("insert option: ")
 
     #Retorna option
     return option

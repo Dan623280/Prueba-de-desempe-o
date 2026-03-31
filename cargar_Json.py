@@ -1,6 +1,6 @@
 
-# se importa la function de la lista de estudiantes
-from lista_estudiantes import Lista_estudiantes
+# se importa la function de la student list
+from list_students import list_students
 
 #se importa el json
 import json
@@ -13,10 +13,10 @@ import json
 def Cargar():
 
     # se abre el archivo para leer y se llama por "archivo"
-    with open("datos.json", "r", encoding="utf-8") as archivo:
+    with open("data.json", "r", encoding="utf-8") as archivo:
         
-        # se leen los datos y seguardan en la variables
-        datos_json = json.load(archivo)
+        # se leen los data y seguardan en la variables
+        data_json = json.load(archivo)
 
-    #se ingresan los datos a la variable de la lista de estudiantes
-    Lista_estudiantes.extend(datos_json)
+    #se ingresan los data a la variable de la student list
+    list_students.extend(data_json)

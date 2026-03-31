@@ -1,6 +1,6 @@
 
-# se importa la function de verificar la lista de estudiantes, las functiones error entero , valor no valido y error estring
-from function_r_estudiante import error_entero, Lista_estudiantes, valor_no_valido, error_string, verifi_Estado
+# se importa la function de verificar la student list, las functiones error entero , valor no valido y error estring
+from function_r_student import error_entero, list_students, valor_no_valido, error_string, verifi_Estado
 
 
 #-------------------------
@@ -12,11 +12,11 @@ def Menu_filter():
     #Mostrar menu
     print("")
     print("1. ID")
-    print("2. Nombre")
-    print("3. Edad")
-    print("4. curso")
+    print("2. Name")
+    print("3. Age")
+    print("4. course")
     print("5. Estado")
-    print("6. Salir")
+    print("6. go_out")
     print("")
 
     #Pedir option
@@ -29,13 +29,13 @@ def Menu_filter():
 # Indice
 #-------------------------
 
-def Indice(lista_id):
+def Indice(list_id):
 
     # pide el indice con validacion de error
-    inidice = error_entero("Colocar indice del cliente: ") 
+    inidice = error_entero("insert indice del cliente: ") 
 
-    # si el idice es mayor al numero ma grande de la lista
-    if inidice > max(lista_id):
+    # si el idice es mayor al numero ma grande de la list
+    if inidice > max(list_id):
 
         #imprime el mensaje de valor no valido
         valor_no_valido()
@@ -44,142 +44,142 @@ def Indice(lista_id):
     else:
 
         #se crea un bucle para recorrer los elementos
-        for elemento in Lista_estudiantes:
+        for elemento in list_students:
                 
             # se filtra por el indice
             if elemento['id'] == inidice:
                     
-                # se muestra elemento a eliminar   
-                print(f"Indice = {elemento['id']}, Nombre = {elemento['Nombre']}, Edad = {elemento['Edad']}, Curso = {elemento['Curso']}, Estado = {elemento['Estado']}")
+                # se muestra elemento a Delete   
+                print(f"Indice = {elemento['id']}, Name = {elemento['Name']}, Age = {elemento['Age']}, Course = {elemento['Course']}, Estado = {elemento['Estado']}")
 
 
 
 #------------------------------
-# Nombre
+# Name
 #------------------------------
 
-def Verifi_nombre_filter():
+def Verifi_name_filter():
 
     #crea un ciclo
     while True:
 
-        #pide el nombre
-        nombre = error_string("Colocar Nombre: ")
+        #pide el name
+        name = error_string("insert Name: ")
 
-        #crea una lista para almacenar nombres
-        lista_nombre = []
+        #crea una list para almacenar names
+        list_name = []
 
         #se crea un bucle para recorrer los elementos
-        for elemento in Lista_estudiantes:
+        for elemento in list_students:
 
-            # se añade los nombres a la lista
-            lista_nombre.append(elemento['Nombre'])
+            # se añade los names a la list
+            list_name.append(elemento['Name'])
 
-        # si nombre esta en la lista
-        if nombre in lista_nombre:
+        # si name esta en la list
+        if name in list_name:
 
-            # retorna el nombre
-            return nombre
+            # retorna el name
+            return name
         
-        # si nombre no esta en lista
+        # si name no esta en list
         else:
 
-            # muestra mensaje de nombre no exites
+            # muestra mensaje de name no exites
             print("----------------------")
-            print("-- Nombre no existe --")
+            print("-- Name no existe --")
             print("----------------------")
 
 
 
-def Nombre():
+def Name():
 
-    nombre = Verifi_nombre_filter()
+    name = Verifi_name_filter()
 
     #se crea un bucle para recorrer los elementos
-    for elemento in Lista_estudiantes:
+    for elemento in list_students:
                 
-            #si nombre es igual a nombre
-            if elemento['Nombre'] == nombre:
+            #si name es igual a name
+            if elemento['Name'] == name:
                     
-                # se imprimen los datos de la lista
-                print(f"Indice = {elemento['id']}, Nombre = {elemento['Nombre']}, Edad = {elemento['Edad']}, Curso = {elemento['Curso']}, Estado = {elemento['Estado']}")
+                # se imprimen los data de la list
+                print(f"Indice = {elemento['id']}, Name = {elemento['Name']}, Age = {elemento['Age']}, Course = {elemento['Course']}, Estado = {elemento['Estado']}")
     
         
 
 #------------------------------
-# Edad
+# Age
 #------------------------------
 
-def Verifi_edad_filter():
+def Verifi_age_filter():
 
     while True:
 
-        edad = error_entero("Colocar Edad: ")
+        Age = error_entero("insert Age: ")
 
-        lista_edad = []
+        list_age = []
 
-        for elemento in Lista_estudiantes:
+        for elemento in list_students:
 
-            lista_edad.append(elemento['Edad'])
+            list_age.append(elemento['Age'])
 
-        if edad in lista_edad:
+        if Age in list_age:
 
-            return edad
+            return Age
         else:
 
             print("--------------------")
-            print("-- Edad no existe --")
+            print("-- Age no existe --")
             print("--------------------")
 
 
 
-def Edad():
+def Age():
 
-    edad = Verifi_edad_filter()
+    Age = Verifi_age_filter()
 
-    for elemento in Lista_estudiantes:
+    for elemento in list_students:
                 
-            if elemento['Edad'] == edad:
+            if elemento['Age'] == Age:
                     
-                print(f"Indice = {elemento['id']}, Nombre = {elemento['Nombre']}, Edad = {elemento['Edad']}, Curso = {elemento['Curso']}, Estado = {elemento['Estado']}")
+                print(f"Indice = {elemento['id']}, Name = {elemento['Name']}, Age = {elemento['Age']}, Course = {elemento['Course']}, Estado = {elemento['Estado']}")
 
 
 #------------------------------
-# Curso
+# Course
 #------------------------------
 
-def Verifi_curso_filter():
+def Verifi_course_filter():
 
     while True:
 
-        curso = error_string("Colocar Curso: ")
+        course = error_string("insert Course: ")
 
-        lista_curso = []
+        list_course = []
 
-        for elemento in Lista_estudiantes:
+        for elemento in list_students:
 
-            lista_curso.append(elemento['Curso'])
+            list_course.append(elemento['Course'])
 
-        if curso in lista_curso:
+        if course in list_course:
 
-            return curso
+            return course
         else:
 
             print("----------------------")
-            print("-- Curso no existe --")
+            print("-- Course no existe --")
             print("----------------------")
 
 
 
-def Curso():
+def Course():
 
-    curso = Verifi_curso_filter()
+    course = Verifi_course_filter()
 
-    for elemento in Lista_estudiantes:
+    for elemento in list_students:
                 
-            if elemento['Curso'] == curso:
+            if elemento['Course'] == course:
                     
-                print(f"Indice = {elemento['id']}, Nombre = {elemento['Nombre']}, Edad = {elemento['Edad']}, Curso = {elemento['Curso']}, Estado = {elemento['Estado']}")
+                print(f"Indice = {elemento['id']}, Name = {elemento['Name']}, Age = {elemento['Age']}, Course = {elemento['Course']}, Estado = {elemento['Estado']}")
     
 
 #------------------------------
@@ -190,10 +190,10 @@ def Estado():
 
     estado = verifi_Estado()
 
-    for elemento in Lista_estudiantes:
+    for elemento in list_students:
                 
             if elemento['Estado'] == estado:
                     
-                print(f"Indice = {elemento['id']}, Curso = {elemento['Curso']}, Edad = {elemento['Edad']}, Curso = {elemento['Curso']}, Estado = {elemento['Estado']}")
+                print(f"Indice = {elemento['id']}, Course = {elemento['Course']}, Age = {elemento['Age']}, Course = {elemento['Course']}, Estado = {elemento['Estado']}")
     
     
