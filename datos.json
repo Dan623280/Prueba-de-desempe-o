@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "Nombre": "Lucho",
+        "Edad": 23,
+        "Curso": "Ingles",
+        "Estado": "activo"
+    },
+    {
+        "id": 2,
+        "Nombre": "Juan",
+        "Edad": 23,
+        "Curso": "Ingles",
+        "Estado": "activo"
+    },
+    {
+        "id": 3,
+        "Nombre": "lUCHO",
+        "Edad": 54,
+        "Curso": "TEOLOGIA",
+        "Estado": "activo"
+    }
+]
