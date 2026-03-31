@@ -51,7 +51,7 @@ def update():
                 if elemento['id'] == inidice:
                 
                     # se piden los valores para update
-                    elemento['Name'] = error_string("Coloque el Name")
-                    elemento['Age'] = error_entero("Coloque Age: ")
-                    elemento['Course'] = error_string("Coloque el Course")
+                    elemento['Name'] = error_string("Place the Name: ")
+                    elemento['Age'] = error_entero("Place the Age: ")
+                    elemento['Course'] = error_string("Place the Course: ")
                     elemento['Estado'] = verifi_Estado()
